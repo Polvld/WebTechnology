@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="HTML, верстка, Javascript">
+    <meta name="description" content="Javascript">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    <link href="style.css" rel="stylesheet">
+    <title>Javascript</title>
+</head>
+<body>
+    <header>
+        <p><img src="images/1.png" width="100" height="100" style="padding-right: 10px; padding-left: 20px"  alt="Javascript title image" title="Javascript" align="left"></p>
+
+        <h1 style="padding-top: 30px">Javascript</h1>
+        <br/>
+    </header>
+
+    <nav class="contents">
+        <strong><em><a href="#JS&ECMAScript">JavaScript и спецификация ECMAScript</a> | <a href="#docJS">Документация JavaScript против спецификации ECMAScript</a> | 
+        <a href="#helloJS">Начинаем знакомство с JavaScript</a> | <a href="#webconsole">Web Console</a> | <a href="#scratchpad">Scratchpad</a> | <a href="#informationJS">Где можно найти информацию о JavaScript</a></em></strong>
+    </nav> 
+    <hr>
+
+    <div class="content">
+        <p><strong>Javascript -</strong>  это кросс-платформенный, объектно-ориентированный скриптовый язык, являющийся небольшим и легковесным. 
+        Внутри среды исполнения JavaScript может быть связан с объектами данной среды и предоставлять программный контроль над ними. </p>
+        <p>JavaScript включает стандартную библиотеку объектов, например, Array, Date и Math, а также базовый набор языковых элементов, например, операторы и управляющие конструкции. 
+        Ядро JavaScript может быть расширено для различных целей путём добавления в него новых объектов, например:
+            <ul>
+                <li>JavaScript на стороне клиента расширяет ядро языка, предоставляя объекты для контроля браузера и его Document Object Model (DOM). 
+                Например, клиентские расширения позволяют приложению размещать элементы в форме HTML и обрабатывать пользовательские события, такие как щелчок мыши, ввод данных в форму и навигация по страницам.</li>
+                <li>JavaScript на стороне сервера расширяет ядро языка, предоставляя объекты для запуска JavaScript на сервере. 
+                Например, расширение на стороне сервера позволяет приложению соединяться с базой данных, обеспечивать непрерывность информации между вызовами приложения или выполнять манипуляции над файлами на сервере.</li>
+            </ul>
+        </p>
+    </div>
+
+    <h3><a name="JS&ECMAScript"></a>JavaScript и спецификация ECMAScript</h3>
+    <div class="content">
+        <p>JavaScript стандартизирован европейской ассоциацией <a href="https://www.ecma-international.org/" target="_blank">Ecma International</a>, деятельность которой посвящена стандартизации информационных и коммуникационных систем (изначально ECMA являлся акронимом European Computer Manufacturers Association). 
+        Эта стандартизированная версия JavaScript, называемая ECMAScript, работает одинаково во всех приложениях, поддерживающих стандарт. 
+        Компании могут использовать открытый стандарт языка, чтобы разработать собственную реализацию JavaScript.</p>
+        <p>Стандарт ECMAScript задокументирован в спецификации ECMA-262.
+        Стандарт ECMA-262 также утверждён <a href="http://www.iso.org/iso/home.html" target="_blank">ISO</a> (International Organization for Standardization) как ISO-16262. Вы можете найти спецификацию <a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm" target="_blank">сайте Ecma International</a>. 
+        Спецификация ECMAScript не описывает Document Object Model (DOM), которая стандартизирована <a href="https://www.w3.org/" target="_blank">World Wide Web Consortium (W3C)</a>. 
+        DOM определяет способ для доступа к объектам HTML документа из вашего скрипта. Чтобы получить более точное представление о различных технологиях, используемых при программировании на JavaScript.</p>
+    </div>
+
+    <h3><a name="docJS"></a>Документация JavaScript против спецификации ECMAScript</h3>
+    <div class="content">
+        <p>Спецификация ECMAScript — это набор требований, касающихся реализации ECMAScript. </p>
+        <p>Она предназначена для реализации языковых возможностей, соответствующих стандарту, в вашей реализации ECMAScript или движке (например, SpiderMonkey в Firefox или V8 в Google Chrome).</p>
+        <p>Документ ECMAScript не предназначен для помощи программистам в создании скриптов; чтобы получить информацию о том, как писать скрипты, используйте документацию JavaScript.</p>
+        <p>Спецификация ECMAScript использует терминологию и синтаксис, которые могут быть незнакомы JavaScript-программистам. 
+        Хотя описание языка может отличаться в ECMAScript, но сам язык остаётся таким же. JavaScript поддерживает всю функциональность, описанную в спецификации ECMAScript.</p>
+        <p>Документация JavaScript описывает аспекты языка, являющиеся подходящими для JavaScript-программиста.</p>
+    </div>    
+
+    <h3><a name="helloJS"></a>Начинаем знакомство с JavaScript</h3>
+    <div class="content">
+        <p>Все, что вам нужно для знакомства с JavaScript — это современный браузер. 
+        Данное руководство включает некоторые возможности JavaScript, которые на данный момент доступны только в последних версиях Firefox, поэтому рекомендуется использовать последнюю версию Firefox.</p> 
+        <p>В Firefox встроены два инструмента, полезных для экспериментирования с JavaScript: Web Console и Scratchpad.</p> 
+    </div>
+
+    <h3><a name="webconsole"></a>Web Console</h3>
+    <div class="content">
+        <p>Web Console отображает информацию о текущей загруженной веб-странице, а также включает командную строку, которую вы можете использовать, чтобы выполнить выражения JavaScript на текущей странице.</p> 
+        <p>Чтобы открыть Web Console, выберите "Web Console" из меню "Web Developer", которое находится под меню "Tools" в Firefox. Консоль появится в нижней части окна браузера. 
+        Вдоль нижней части консоли размещается командная строка, которую вы можете использовать для ввода JavaScript, результат выполнения появится на панели выше:</p> 
+    </div>
+
+    <p class="img"><a href="images/2.png" target="_blank"><img src="images/2.png" width="70%" height="70%" alt="Web Console example" title="Web Console" loading="lazy"></a></p>
+
+    <h3><a name="scratchpad"></a>Scratchpad</h3>
+    <div class="content">
+        <p>Web Console отлично подходит для выполнения одиночных строк JavaScript, но хотя вы можете выполнить и несколько строк, это не очень удобно, к тому же вы не можете сохранить ваш код, используя Web Console. 
+        Поэтому для более комплексных примеров Scratchpad является более подходящим инструментом.</p> 
+        <p>Чтобы открыть Scratchpad (<kbd>Shift</kbd> + <kbd>F4</kbd>) , выберите "Scratchpad" из меню "Web Developer", которое находится под меню "Tools" в Firefox. 
+        Блокнот будет открыт в отдельном окне, вы можете использовать его для создания и выполнения JavaScript в браузере. Вы также можете сохранять ваши скрипты на жёсткий диск, а потом загружать их.</p> 
+        <p>Если вы выберете "Display", то код в вашем блокноте будет выполнен в браузере, а результат вставлен обратно в блокнот как комментарий:</p> 
+    </div>
+
+    <p class="img"><a href="images/3.png" target="_blank"><img src="images/3.png" width="55%" height="55%" alt="Scratchpad example" title="Scratchpad" loading="lazy"></a></p>
+
+    <h3><a name="informationJS"></a>Где можно найти информацию о JavaScript?</h3>
+    <div class="content">
+        <p>Документация по JavaScript на MDN включает:</p> 
+        <ol>
+            <li><a href="https://developer.mozilla.org/ru/docs/Learn" target="_blank">Изучение Web</a> предоставляет информацию для начинающих и вводит в базовые концепции программирования и Internet.</li>
+            <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide" target="_blank">Руководство по JavaScript</a> (данное руководство) предоставляет обзор JavaScript и его объектов.</li>
+            <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference" target="_blank">Справочник по JavaScript</a> предоставляет подробную информацию по JavaScript.</li>
+        </ol>
+        <p>Если вы являетесь новичком в JavaScript, то начните с Изучение Web и Руководство по JavaScript. 
+        Как только вы освоите фундаментальные концепции, используйте Справочник по JavaScript для того, чтобы получить более подробную информацию о конкретных объектах или операторах.</p> 
+        <p>В то же время могут быть полезными следующие ресурсы:</p>
+        <table>
+            <caption style="margin-bottom: 10px"><strong>Ресурсы для изучения Javascript</strong></caption>
+            <tr>
+                <th width="40px">№</th>
+                <th>Адрес</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="https://learn.javascript.ru/" target="_blank">Современный учебник по Javascript</a></td>
+                <td class="table_info">Современный учебник по Javascript, начиная с основ, включающий в себя много тонкостей и фишек JavaScript/DOM.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://youtube.com/" target="_blank">Youtube</a></td>
+                <td class="table_info">Всем известный источник информации, позволяющий найти необходимую информацию, изложенную обозревателем в доступной форме.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://www.codewars.com/" target="_blank">Codewars</a></td>
+                <td class="table_info">Codewars - образовательное сообщество по компьютерному программированию. На платформе разработчики программного обеспечения обучаются программированию задач, известных как ката.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td height="40px"><a href="https://leetcode.com/" target="_blank">Leetcode</a></td>
+                <td class="table_info">Онлайн платформа позволяющая тренировать умения по программированию.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="https://hackerrank.com/" target="_blank">Hackerrank</a></td>
+                <td class="table_info">HackerRank — это технологическая компания, которая фокусируется на задачах конкурентного программирования как для потребителей, 
+                так и для бизнеса, где разработчики соревнуются, пытаясь программировать в соответствии с предоставленными спецификациями.
+                Программные задачи HackerRank могут быть решены на различных языках программирования (включая Java, C++, PHP, Python, SQL, JavaScript) и охватывают несколько областей компьютерных наук.</td>
+            </tr>
+        </table>
+        <p>Для изучения нативного Javascript приветствуется прочтение книг издательства O'Reilly:</p>
+        <ul>
+            <li><a href="https://www.ozon.ru/product/izuchaem-programmirovanie-na-javascript-frimen-erik-robson-elizabet-frimen-erik-robson-elizabet-211434582/?asb=pWoJ5IjoyIeaHddOGWqCdw1%252BIVXlpTLEoHx%252BWRNyxYk%253D&asb2=BTXb3i3bfaQayG-ldZSWkoGJYbX3nReBEKOLba9j1l_fm-CQzT8Y3iMPRGWzSGNL&sh=cbEtUgAAAA" target="_blank">Изучаем программирование на JavaScript Фримен Эрик, Робсон Элизабет | Фримен Эрик, Робсон Элизабет</a></li>
+            <li><a href="https://monster-book.com/vy-ne-znaete-js" target="_blank">Серия книг Кайла Симпсона "Вы не знаете JS"</a></li>
+            <li><a href="https://www.ozon.ru/product/sekrety-javascript-nindzya-142089820/?asb=qIMAUu4I5C7aNm%252FpkwXzvn1WGPuFjdAyrc9BaHJ1Awo%253D&asb2=Sdx1Srh3k7_S4z4OGkaqP_sUieo5d2_l8TLNdMvi1c4_41pSder_R9JG4xe7MhrL&keywords=javascript&sh=cbEtUgAAAA" target="_blank">Секреты JavaScript ниндзя | Бибо Беэр, Марас Иосип</a></li>
+        </ul>
+        <br/>
+
+        <p style="font-size: 10pt"><strong>Автор:</strong> Полежаев Владислав</p>
+        <p style="font-size: 10pt"><strong>Источник:</strong> <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Introduction" target="_blank">MDN Web docs</a></p>
+        <p style="font-size: 8pt">*Ссылки на внешние источники не являются рекламными материалами и используются для возможности предоставления доступа к обзору в World wide web.</p>
+    </div>
+    <a class="back_to_top" title="Наверх">↑</a>
+    <script src="index.js"> </script>
+</body>
+</html>
+
+
